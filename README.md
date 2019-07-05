@@ -1,13 +1,13 @@
-#I am Python Developer 
+# I am Python Developer 
 
-###Python and minimal env setup script for Linux and OSX 
+### Python and minimal env setup script for Linux and OSX 
 
-###Distros supported:
+### Distros supported:
 
 Ubuntu
 OSX (requires XCode/GCC to be installed. Install command line tools via XCode->preferences to install GCC)
 
-###What this gives you:
+### What this gives you:
 
 Homebrew (OSX only)
 Python defined by .python-version
