@@ -1,5 +1,7 @@
 #I am Python Developer 
+
 ###Python and minimal env setup script for Linux and OSX 
+
 ###Distros supported:
 
 Ubuntu
