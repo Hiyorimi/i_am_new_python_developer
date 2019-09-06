@@ -7,6 +7,15 @@
 Ubuntu
 OSX (requires XCode/GCC to be installed. Install command line tools via XCode->preferences to install GCC)
 
+### Quickstart on Mac
+
+Assuming, you have installed [brew and git]( https://gist.github.com/derhuerst/1b15ff4652a867391f03#file-mac-md):
+
+```bash
+$ mkdir projects && cd projects && git clone https://github.com/Hiyorimi/i_am_new_python_developer.git
+$ cd i_am_new_python_developer && bash i_am_new_python_developer.sh
+```
+
 ### What this gives you:
 
 Homebrew (OSX only)
