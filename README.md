@@ -18,10 +18,11 @@ $ cd i_am_new_python_developer && bash i_am_new_python_developer.sh
 
 ### What this gives you:
 
-Homebrew (OSX only)
-Python defined by .python-version
-Pyenv / pipenv
-Git
+* Homebrew (OSX only)*
+* Python defined by .python-version
+* Pyenv / pipenv
+* Git*
+
 Please note: If you are running on a super slow connection your sudo session may timeout and you'll have to enter your password again. If you're running this on an EC2 or RS instance it shouldn't be problem.
 
 
