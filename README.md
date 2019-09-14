@@ -7,6 +7,13 @@
 Ubuntu
 OSX (requires XCode/GCC to be installed. Install command line tools via XCode->preferences to install GCC)
 
+### Quickstart on Ubuntu
+
+```bash
+$ sudo apt install curl
+$ curl -L https://raw.githubusercontent.com/Hiyorimi/i_am_new_python_developer/master/i_am_new_python_developer.sh | bash
+```
+
 ### Quickstart on Mac
 
 Assuming, you have installed [brew and git]( https://gist.github.com/derhuerst/1b15ff4652a867391f03#file-mac-md):

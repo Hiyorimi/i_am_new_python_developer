@@ -66,8 +66,8 @@ if [ $? -eq 1 ] ; then
 
     # Install prerequisites from https://github.com/pyenv/pyenv/wiki/Common-build-problems
     sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+libreadline-dev libsqlite3-dev wget curl llvm \
+xz-utils tk-dev libffi-dev liblzma-dev python3-pip python3-openssl git
     sudo apt install libedit-dev
 
     # Install pyenv
@@ -105,8 +105,14 @@ set -e
 echo "Running 'eval "$(pyenv init -)"', make sure you add it to your bash_init script."
 eval "$(pyenv init -)"
 
-pip install --upgrade pip
-pip install pipenv poetry
+if [[ $MACHTYPE = *linux* ]] ; then
+    sudo -H pip3 install --upgrade pip
+    sudo pip3 install pipenv poetry
+elif [[ $MACHTYPE = *darwin* ]] ; then
+    pip install --upgrade pip
+    pip install pipenv poetry
+fi
+
 
 echo -e "\n#################################"
 echo    "### Installation is complete! ###"
